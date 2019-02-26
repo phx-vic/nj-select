@@ -1,6 +1,6 @@
 import './style.scss';
 
-const NJSelect = class {
+export const NJSelect = class {
     constructor(el) {
         const self = this;
         self.select = el;
@@ -117,5 +117,4 @@ const NJSelect = class {
     }
 }
 
-export const create = (...args) => new NJSelect(...args);
 export default NJSelect;
