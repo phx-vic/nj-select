@@ -1,6 +1,6 @@
 {
   "name": "nj-select",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Native JS custom select",
   "main": "dist/nj-select.js",
   "author": "v10",

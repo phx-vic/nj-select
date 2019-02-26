@@ -6,7 +6,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'nj-select.js',
-        library: 'NJ-Select',
+        library: 'NJSelect',
         libraryTarget: 'umd'
     },
     module: {
