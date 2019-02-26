@@ -1,6 +1,6 @@
 import './style.scss';
 
-export default class {
+const NJSelect = class {
     constructor(el) {
         const self = this;
         self.select = el;
@@ -116,3 +116,6 @@ export default class {
         return () => this.select.removeEventListener(event, callback);
     }
 }
+
+export const create = (...args) => new NJSelect(...args);
+export default NJSelect;
