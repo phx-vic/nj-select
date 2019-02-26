@@ -1,0 +1,126 @@
+$height:            40px;
+$padding:           10px;
+$text-size:         16px;
+$text-color:        #000;
+$bg-color:          #fff;
+$border-width:      1px;
+$border-color:      #ddd;
+$border-radius:     4px;
+$hover-bg:          #ebebeb;
+$active-bg:         #ff6347;
+$active-color:      #fff;
+
+.nj-select {
+    position: relative;
+    display: flex;
+  
+    &__select {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        opacity: 0;
+        z-index: 1;
+        pointer-events: none;
+        cursor: pointer;
+      
+        .nj--native & {
+            pointer-events: all;
+        }
+    }
+  
+    &__list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: 300px;
+        min-width: 200px;
+        padding: 0;
+        margin: 5px 0 0; 
+        font-size: $text-size;
+        list-style: none;
+        background-color: $bg-color;
+        border-radius: $border-radius;
+        border: $border-width solid $border-color;
+        overflow-y: auto;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+      
+        &-btn {
+            display: block;
+            width: 100%;
+            padding: 0 $padding;
+            color: $text-color;
+            text-align: left;
+            line-height: $height;
+            border: none;
+            background: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: pointer;
+            outline: none;
+
+            &:hover {
+                background-color: $hover-bg;
+            }
+          
+            .nj--active & {
+                color: $active-color;
+                background-color: $active-bg;
+                cursor: default;
+            }
+        }
+         
+        .nj--open & {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+  
+    &__active {
+        display: block;
+        width: 100%;
+        padding: 0 30px + $padding 0 $padding;
+        position: relative;
+        font-size: $text-size;
+        line-height: $height;
+        text-align: left;
+        color: black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background: none;
+        border: $border-width solid $border-color;
+        border-radius: $border-radius;
+        opacity: .8;
+        cursor: pointer;
+        outline: none;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 30px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            text-align: center;
+            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"%3E%3Cpath d="M200.999983,14 C200.820763,14 200.641565,13.9279717 200.504925,13.784218 L196.205142,9.25831682 C195.931619,8.97041335 195.931619,8.50362723 196.205142,8.21584024 C196.478554,7.92805325 196.921935,7.92805325 197.195479,8.21584024 L200.999983,12.220608 L204.80451,8.21598001 C205.078032,7.92819302 205.521369,7.92819302 205.794759,8.21598001 C206.068414,8.503767 206.068414,8.97055312 205.794759,9.25845659 L201.495041,13.7843578 C201.358336,13.9281348 201.179137,14 200.999983,14 Z" transform="translate(-196 -8)"/%3E%3C/svg%3E') no-repeat 50%;
+            opacity: .2;
+            transition: .3s;
+          
+            .nj--open & {
+                transform: rotate(180deg);
+            }
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
