@@ -1,14 +1,24 @@
 {
   "name": "nj-select",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Native JS custom select",
   "main": "dist/nj-select.js",
-  "repository": "https://github.com/phx-vic/nj-select",
+  "homepage": "https://github.com/phx-vic/nj-select",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/phx-vic/nj-select.git"
+  },
   "author": {
     "name": "phx-vic",
     "email": "phx@ukr.net",
     "url": "https://github.com/phx-vic"
   },
+  "keywords": [
+    "select",
+    "dropdown",
+    "js",
+    "css"
+  ],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
