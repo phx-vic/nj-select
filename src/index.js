@@ -89,7 +89,7 @@ export const NJSelect = class {
     }
 
     setActive(index) {
-        const activeIndex = index ? index : this.select.selectedIndex;
+        const activeIndex = index >= 0 ? index : this.select.selectedIndex;
         const items = this.list.children;
 
         // clear active class
@@ -97,7 +97,7 @@ export const NJSelect = class {
         this.activeIndex = activeIndex;
 
         // change selected option if clicked on list item
-        if (index) {
+        if (index >= 0) {
             this.select.selectedIndex = this.activeIndex;
         }
 

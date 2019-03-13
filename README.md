@@ -1,6 +1,9 @@
 # NJ Select
 Native JS custom select.
 
+## Demo
+It's on the [GitHub Pages](https://phx-vic.github.io/nj-select/).
+
 ## Install
 #### npm
 ```sh
