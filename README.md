@@ -16,7 +16,7 @@ yarn add nj-select
 ```
 
 #### Manual download
-You can manually download nj-select from [repository](https://github.com/phx-vic/nj-select/blob/master/dist/nj-select.js).
+You can manually download NJ Select from [repository](https://github.com/phx-vic/nj-select/blob/master/dist/nj-select.js).
 
 ## How to use
 Add select:
