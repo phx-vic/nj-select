@@ -7,7 +7,7 @@ It's on the [GitHub Pages](https://phx-vic.github.io/nj-select/).
 ## Install
 #### npm
 ```
-$ npm install nj-select
+$ npm i nj-select
 ```
 
 #### yarn
@@ -28,7 +28,7 @@ Add select:
 
 Use styles:
 ``` html
-<link rel="stylesheet" href="dist/style.css">
+<link rel="stylesheet" href="dist/nj-select.css">
 ```
 
 Import via ES modules:
