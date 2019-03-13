@@ -3,7 +3,12 @@
   "version": "0.0.5",
   "description": "Native JS custom select",
   "main": "dist/nj-select.js",
-  "author": "v10",
+  "repository": "https://github.com/phx-vic/nj-select",
+  "author": {
+    "name": "phx-vic",
+    "email": "phx@ukr.net",
+    "url": "https://github.com/phx-vic"
+  },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
