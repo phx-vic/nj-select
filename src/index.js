@@ -37,9 +37,9 @@ export const NJSelect = class {
 
         // scaffolding
         self.wrapper.classList.add(self.className.main);
-        self.select.classList.add(self.className.main + '__select');
-        self.active.classList.add(self.className.main + '__active');
-        self.list.classList.add(self.className.main + '__list');
+        self.select.classList.add(`${self.className.main}__select`);
+        self.active.classList.add(`${self.className.main}__active`);
+        self.list.classList.add(`${self.className.main}__list`);
 
         self.select.parentNode.insertBefore(self.wrapper, self.select);
         self.wrapper.appendChild(self.select);
@@ -51,8 +51,8 @@ export const NJSelect = class {
             const li = document.createElement('li');
             const btn = document.createElement('button');
 
-            li.classList.add(self.className.main + '__list-item');
-            btn.classList.add(self.className.main + '__list-btn');
+            li.classList.add(`${self.className.main}__list-item`);
+            btn.classList.add(`${self.className.main}__list-btn`);
 
             self.list.appendChild(li);
             li.appendChild(btn);
@@ -89,7 +89,7 @@ export const NJSelect = class {
     }
 
     setActive(index) {
-        const activeIndex = index >= 0 ? index : this.select.selectedIndex;
+        const activeIndex = index ? index : this.select.selectedIndex;
         const items = this.list.children;
 
         // clear active class
@@ -97,9 +97,8 @@ export const NJSelect = class {
         this.activeIndex = activeIndex;
 
         // change selected option if clicked on list item
-        if (index >= 0) {
+        if (index) {
             this.select.selectedIndex = this.activeIndex;
-            // this.select.dispatchEvent(new Event('change'));
         }
 
         // set new active option
