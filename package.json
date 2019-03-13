@@ -3,7 +3,7 @@
   "version": "0.0.8",
   "description": "Native JS custom select",
   "main": "dist/nj-select.js",
-  "homepage": "https://github.com/phx-vic/nj-select",
+  "homepage": "https://phx-vic.github.io/nj-select",
   "repository": {
     "type" : "git",
     "url" : "https://github.com/phx-vic/nj-select.git"

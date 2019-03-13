@@ -6,13 +6,13 @@ It's on the [GitHub Pages](https://phx-vic.github.io/nj-select/).
 
 ## Install
 #### npm
-```sh
-npm install nj-select
+```
+$ npm install nj-select
 ```
 
 #### yarn
-```sh
-yarn add nj-select
+```
+$ yarn add nj-select
 ```
 
 #### Manual download
@@ -20,29 +20,29 @@ You can manually download NJ Select from [repository](https://github.com/phx-vic
 
 ## How to use
 Add select:
-```sh
+``` html
 <select id="nj">
     ...
 </select>
 ```
 
 Use styles:
-```sh
+``` html
 <link rel="stylesheet" href="dist/style.css">
 ```
 
 Import via ES modules:
-```sh
+``` javascript
 import NJSelect from 'nj-select';
 ```
 
 Or in browser:
-```sh
+``` html
 <script src="dist/nj-select.js"></script>
 ```
 
 To initialise:
-```sh
+``` javascript
 new NJSelect(document.getElementById('nj'));
 ```
 
