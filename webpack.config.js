@@ -45,7 +45,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'style.css'
+            filename: 'nj-select.css'
         })
     ],
     mode: 'production'

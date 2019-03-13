@@ -1,4 +1,4 @@
-import './style.scss';
+import './app.scss';
 
 export const NJSelect = class {
     constructor(el) {
