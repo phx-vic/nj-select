@@ -99,6 +99,7 @@ export const NJSelect = class {
         // change selected option if clicked on list item
         if (index >= 0) {
             this.select.selectedIndex = this.activeIndex;
+            this.select.dispatchEvent(new Event('change'));
         }
 
         // set new active option
