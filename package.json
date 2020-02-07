@@ -1,12 +1,12 @@
 {
   "name": "nj-select",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Native JS custom select",
   "main": "dist/nj-select.js",
   "homepage": "https://phx-vic.github.io/nj-select",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/phx-vic/nj-select.git"
+    "type": "git",
+    "url": "https://github.com/phx-vic/nj-select.git"
   },
   "author": {
     "name": "phx-vic",
