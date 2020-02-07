@@ -68,6 +68,12 @@ $active-color:      #fff;
             &:hover {
                 background-color: $hover-bg;
             }
+
+            &:disabled {
+                cursor: not-allowed;
+                background: none;
+                opacity: .4;
+            }
           
             .nj--active & {
                 color: $active-color;

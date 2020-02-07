@@ -54,6 +54,10 @@ export const NJSelect = class {
             li.classList.add(`${self.className.main}__list-item`);
             btn.classList.add(`${self.className.main}__list-btn`);
 
+            if (item.disabled) {
+                btn.disabled = true;
+            }
+
             self.list.appendChild(li);
             li.appendChild(btn);
             btn.innerHTML = item.innerHTML;
