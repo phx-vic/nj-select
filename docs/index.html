@@ -17,9 +17,32 @@
         <option value="5">Option 5</option>
     </select>
 
+    <br>
+
+    <button type="button" class="js-add">add</button>
+    <button type="button" class="js-update">update</button>
+    <button type="button" class="js-destroy">destroy</button>
+
     <script src="nj-select.js"></script>
     <script>
-        new NJSelect(document.getElementById('nj'));
+        var select = new NJSelect(document.getElementById('nj'));
+
+        document.querySelector('.js-add').addEventListener('click', function() {
+            var item = document.querySelector('#nj');
+            var option = document.createElement('option');
+            option.text = 'Option ' + (item.options.length + 1);
+            item.add(option);
+
+            select.update();
+        });
+
+        document.querySelector('.js-update').addEventListener('click', function() {
+            select.update();
+        });
+
+        document.querySelector('.js-destroy').addEventListener('click', function() {
+            select.destroy();
+        });
     </script>
 </body>
 </html>
