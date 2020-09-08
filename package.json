@@ -1,6 +1,6 @@
 {
   "name": "nj-select",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Native JS custom select",
   "main": "dist/nj-select.js",
   "homepage": "https://phx-vic.github.io/nj-select",
