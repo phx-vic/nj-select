@@ -31,10 +31,8 @@ module.exports = {
                         options: {
                             ident: 'postcss',
                             plugins: [
-                                require('autoprefixer')({
-                                    'browsers': ['last 2 versions']
-                                }),
-                                require('cssnano')()
+                                require('autoprefixer'),
+                                require('cssnano')
                             ]
                         }
                     },

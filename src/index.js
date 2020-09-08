@@ -39,6 +39,7 @@ export const NJSelect = class {
             self.wrapper.classList.add(self.className.main);
             self.select.classList.add(`${self.className.main}__select`);
             self.active.classList.add(`${self.className.main}__active`);
+            self.active.setAttribute('type', 'button');
             self.list.classList.add(`${self.className.main}__list`);
 
             // scaffolding
@@ -57,6 +58,7 @@ export const NJSelect = class {
 
                 li.classList.add(`${self.className.main}__list-item`);
                 btn.classList.add(`${self.className.main}__list-btn`);
+                btn.setAttribute('type', 'button');
 
                 if (item.disabled) {
                     btn.disabled = true;
@@ -99,6 +101,12 @@ export const NJSelect = class {
             // set new active option
             this.active.innerHTML = this.select.options[this.activeIndex].innerHTML;
             items[this.activeIndex].classList.add(this.className.active);
+
+            if (this.select.options[this.activeIndex].getAttribute('value')) {
+                this.active.classList.remove('is-placeholder');
+            } else {
+                this.active.classList.add('is-placeholder');
+            }
         };
         self._isMobile = () => {
             return this.mobile.any();
@@ -115,7 +123,7 @@ export const NJSelect = class {
                 self.wrapper.classList.remove(self.className.open);
                 document.body.removeEventListener('click', close);
             }
-        }
+        };
 
         self._init();
     }

@@ -126,6 +126,10 @@ $active-color:      #fff;
             }
         }
 
+        &.is-placeholder {
+            color: rgba($text-color, .5);
+        }
+
         &:hover {
             opacity: 1;
         }
